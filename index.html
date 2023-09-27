@@ -1,15 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- 3 modalità di inserimento CSS sono:
+    
+    1) stile in linea (attributo style) - da usare con cautela e parsimonia, per brevi test
+    2) stile integrato nella pagina. meglio dell'inline ma comunque poco mantenibile
+    3) foglio di stile esterno - style.css linkato nel tag head
+    -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- CSS integrato - poco mantenibile nel tempo -->
+    <!-- <style>
+        .header-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <h1>My Biggest Title</h1>
+    <header>
+        <img class="header-image"
+            src="https://images.unsplash.com/photo-1695632844647-d9252f33100d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="sunrise">
+    </header>
+    <main>
+        <!-- ho applicato la classe fourth-elem ma la definizione del selettore nel css prevede che il fourth-elem sia nel contesto di un genitore second-list che questo h1 non ha, 
+            lo stile non verrà applicato ad h1 -->
+        <h1 id="my-title" class="main-title fourth-elem" style="font-size: 2px;">My Biggest Title</h1>
+        <h2>this is a subtitle of our page</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam totam corporis, facere mollitia
+            dignissimos nihil hic illum vero neque velit porro iste deleniti sapiente? Itaque sint molestiae quis
+            repudiandae laudantium! </p>
+        <hr />
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+        </ul>
+        <img src="https://images.unsplash.com/photo-1695642579133-d41f36bcca61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1976&q=80"
+            alt="hasselblad">
 
+        <ul class="second-list">
+            <li>elemento1</li>
+            <li>elemento2</li>
+            <li>elemento3</li>
+            <li><span class="fourth-elem">elemento4</span></li>
+            <li>elemento5</li>
+            <li>elemento6</li>
+            <li>elemento7</li>
+            <li>elemento8</li>
+            <li>elemento9</li>
+            <li>elemento10</li>
+        </ul>
+        <ol class="third-list">
+            <li>elemento1</li>
+            <li>elemento2</li>
+            <li>elemento3</li>
+            <li>elemento4</li>
+            <li>elemento5</li>
+            <li>elemento6</li>
+            <li>elemento7</li>
+            <li>elemento8</li>
+            <li>elemento9</li>
+            <li>elemento10</li>
+        </ol>
+    </main>
 </body>
 
 </html>

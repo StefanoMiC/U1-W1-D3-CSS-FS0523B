@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+button {
+  border: none;
+  padding: 16px;
+  font-size: 1.2rem;
+  background-color: lightskyblue;
+  color: #015183;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  box-shadow: 0 6px 6px -4px #00000052;
+}
+
+.card {
+  background-color: #e5e5e5;
+  margin-top: 2rem;
+  /* centrare un blocco si può fare restringendo la larghezza rendendola più piccola del totale, e rendendo i margini automatici sull'asse delle x */
+
+  width: 330px;
+
+  /* alternativa nr1 */
+  /* margin-left: auto;
+  margin-right: auto; */
+
+  /* alternativa nr2 (più moderna) */
+  margin-inline: auto;
+  box-shadow: 0 8px 12px -4px #00000052;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h4 {
+  margin: 0;
+}
+
+.card .card-content {
+  padding: 10px 20px 20px;
+}
+
+.card .card-content .action-buttons {
+  text-align: center;
+}
+
+.card .card-content .block-button {
+  display: block;
+  margin-inline: auto;
+}
