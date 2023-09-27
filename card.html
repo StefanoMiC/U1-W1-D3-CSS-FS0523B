@@ -19,6 +19,7 @@
             alt="photographer">
 
         <div class="card-content">
+            <!-- .card-content lo usiamo per dare un padding solo al contenuto lasciando che l'immagine tocchi i bordi della card -->
             <h4>
                 Hasselblad on field
             </h4>
@@ -29,9 +30,15 @@
                 voluptate.
                 Quia facilis quos qui enim, alias id expedita recusandae animi nostrum sapiente consectetur! </p>
 
+            <!-- due modi per centrare un bottone:  -->
+            <!-- 1) il primo prevede un genitore su cui applicare la proprietà text-center -->
             <div class="action-buttons">
                 <button>Scopri di più</button>
             </div>
+            <!-- 2) il secondo prevede la conversione del bottone in un blocco e la ripartizione dei margini orizzontali 
+                    in parti uguali con margin-inline: auto -->
+
+            <!-- (vedi definizioni CSS delle due classi nel foglio card.css) -->
             <button class="block-button">Scopri di più</button>
         </div>
     </div>
